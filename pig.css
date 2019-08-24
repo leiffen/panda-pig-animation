@@ -1,0 +1,225 @@
+.pig {
+    position: relative;
+    left: 175px;
+    height: 150px;
+    width: 100px;
+    background-color: pink;
+    border: 5px solid #fe848f;
+    border-radius: 50%/80% 80% 40% 40%;
+}
+
+.pig-face {
+    position: relative;
+    background-color: pink;
+    border: 5px solid #fe848f;
+    height: 105px;
+    width: 130px;
+    border-radius: 50%/80% 80% 40% 40%;
+    bottom: 5px;
+    right: 20px;
+}
+
+.pig-left-ear, .pig-right-ear {
+	position: relative;
+    background-color: pink;
+    border: 5px solid #fe848f;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px 60px 30px 60px;
+    z-index: -1;
+}
+
+.pig-left-ear {
+	transform: rotate(30deg) skewX(30deg) scale(1,0.866);
+    bottom: 0px;
+    right: 12px;
+}
+
+.pig-right-ear {
+	transform: rotate(90deg) skewX(30deg) scale(1,0.866);
+    bottom: 72px;
+    left: 68px;
+}
+
+.pig-left-eye, .pig-right-eye {
+	position: relative;
+	background-color: black;
+	width: 20px;
+	height: 25px;
+	border-radius: 50%;
+}
+
+.pig-left-eye {
+	bottom: 104px;
+	left: 28px;
+}
+
+.pig-right-eye {
+	bottom: 130px;
+    left: 82px;
+}
+
+.pig-eyeball {
+	position: relative;
+	top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.pig-nose {
+	position: relative;
+    height: 20px;
+    width: 30px;
+    background-color: #ff9ca6;
+    border-radius: 50%/60% 60% 60% 60%;
+    bottom: 130px;
+    left: 50px;
+}
+
+.pig-left-nostril, .pig-right-nostril {
+	position: relative;
+    height: 6px;
+    width: 6px;
+    background-color: #d84d5a;
+    border-radius: 60% 60% 60% 60%;
+}
+
+.pig-left-nostril {
+	top: 6px;
+    left: 7px;
+}
+
+.pig-right-nostril {
+    left: 17px;
+}
+
+.pig-left-arm, .pig-right-arm {
+	position: relative;
+	width: 25px;
+	height: 43px;
+	background-color: pink;
+	border-radius: 50%/40% 40% 60% 60%;
+        border: 4px solid #fe848f;
+	z-index: -1;
+}
+
+.pig-left-arm {
+    transform: rotate(55deg);
+    bottom: 23px;
+    right: 20px;
+}
+
+@keyframes wave-right {
+	50% {
+		transform: rotate(-120deg);
+	}
+}
+
+.pig-right-arm {
+	transform: rotate(-90deg);
+    bottom: 56px;
+    right: -68px;
+    animation: wave-right 3s infinite;
+    transform-origin: top;
+}
+
+.pig-center-hand {
+    position: relative;
+    width: 22px;
+    height: 10px;
+    background-color: #3a1a0b;
+    top: 34px;
+    right: -2px;
+    border-radius: 30%;
+}
+
+.pig-finger {
+    position: relative;
+    width: 15.5px;
+    height: 12px;
+    background-color: #3a1a0b;
+    border-radius: 60%;
+}
+
+.pig-left-finger {
+    top: 2.5px;
+    left: -1px;
+    transform: rotate(60deg);
+}
+
+.pig-right-finger {
+    left: 7.5px;
+    bottom: 9.5px;
+    transform: rotate(-60deg);
+}
+
+.pig-left-leg, .pig-right-leg {
+	position: relative;
+	width: 21px;
+	height: 40px;
+	background-color: pink;
+	border-radius: 0px 0px 30px 30px;
+	border: 4px solid #fe848f;
+	z-index: -1;
+}
+
+.pig-left-leg {
+	top: -95px;
+    left: 6px;
+    transform: rotate(-10deg);
+}
+
+.pig-right-leg {
+    bottom: 143px;
+    left: 64px;
+    transform: rotate(10deg);
+}
+
+.pig-leg-bottom {
+    position: relative;
+    width: 21px;
+    height: 10px;
+    background-color: pink;
+    top: 14px;
+    border-radius: 50%;
+}
+
+.pig-center-foot {
+    position: relative;
+    width: 29px;
+    height: 10px;
+    background-color: #3a1a0b;
+    top: 32px;
+    right: 4px;
+    border-radius: 30%;
+}
+
+.pig-left-toe {
+	position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #3a1a0b;
+	border-radius: 20%
+}
+
+.pig-toe {
+    position: relative;
+    width: 15.5px;
+    height: 12px;
+    background-color: #3a1a0b;
+    border-radius: 50%;
+}
+
+.pig-left-toe {
+    top: 3px;
+    transform: rotate(30deg);
+}
+
+.pig-right-toe {
+    left: 13.5px;
+    bottom: 8.5px;
+    transform: rotate(-30deg);
+}

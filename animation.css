@@ -1,0 +1,44 @@
+html {
+	height: 700px;
+    max-height: 700px;
+    width: 1366px;
+    max-width: 1366px;
+}
+
+body {
+    background-image: linear-gradient(360deg, #eaa565 0%, #fbe186 20%, #f9dd95 30%, #e69a89 50%, #985e74 70%, #755274 100%);
+    background-repeat: no-repeat;
+}
+
+#stars_frame {
+}
+
+#panda_pig_frame {
+    margin-left: 523.5px;
+    width: 319px;
+    transform: scale(0.8);
+    margin-top: 300px;
+    opacity: 0.8;
+    animation: animatePandaPig 10s linear infinite;
+}
+
+@keyframes animatePandaPig {
+	from {
+		transform: scale(.8);
+		opacity: 0.8;
+		filter: blur(0px);
+	}
+	to {
+		transform: scale(.5);
+		opacity: 0;
+		filter: blur(5px);
+	}
+}
+
+#block {
+	background-color: black;
+	width: 10px;
+	height: 700px;
+	position: absolute;
+	top: 500px;
+}

@@ -1,0 +1,80 @@
+#sun {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 700px;
+    width: 1366px;
+    overflow: hidden;
+    opacity: .8;
+}
+
+#sun-outter-glare {
+	background-color: #feeec8;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    opacity: .2;
+    filter: blur(10px);
+    position: absolute;
+	top: 110px;
+    left: 283px;
+}
+
+#sun-middle-glare {
+	background-color: #feeec8;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    opacity: .2;
+    filter: blur(10px);
+    position: absolute;
+	top: 210px;
+    left: 383px;
+}
+
+#sun-inner-glare {
+	background-color: #feeec8;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    opacity: .4;
+    filter: blur(10px);
+    position: absolute;
+	top: 310px;
+    left: 483px;
+}
+
+#sun-core {
+	background-color: #ffffe6;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    filter: blur(10px);
+    position: absolute;
+	top: 410px;
+    left: 583px;
+}
+
+#sun-glare {
+	background-color: #ffffe6;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    opacity: 0.2;
+    filter: blur(10px);
+    position: absolute;
+	top: 430px;
+    left: 610px;
+    animation: animateGlare 10s linear infinite;
+}
+
+@keyframes animateGlare {
+	from {
+		transform: scale(1);
+		opacity: 0.2;
+	}
+	to {
+		transform: scale(1.5);
+		opacity: 0.5;
+	}
+}

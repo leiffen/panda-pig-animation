@@ -1,0 +1,133 @@
+.panda {
+    position: relative;
+    left: 35px;
+    top: 169px;
+	height: 120px;
+    width: 82px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 40%;
+}
+
+.panda-face {
+	position: relative;
+	background-color: white;
+	border: 5px solid black;
+	height: 105px;
+    width: 130px;
+    border-radius: 55% 55% 45% 45%;
+	bottom: 30px;
+	right: 30px;
+}
+
+.panda-left-ear, .panda-right-ear {
+	position: relative;
+    background-color: black;
+    height: 32px;
+    width: 60px;
+    border-radius: 0 0 40px 40px;
+    z-index: -1;
+}
+
+.panda-left-ear {
+	transform: rotate(138deg);
+    bottom: 6px;
+    right: 22px;
+}
+
+.panda-right-ear {
+	transform: rotate(-138deg);
+    bottom: 39px;
+    left: 93px;
+}
+
+.panda-left-eye, .panda-right-eye {
+	position: relative;
+	background-color: black;
+	width: 30px;
+	height: 42px;
+	border-radius: 50%/60% 60% 40% 40%;
+}
+
+.panda-left-eye {
+	bottom: 28px;
+	left: 18px;
+	transform: rotate(25deg);
+}
+
+.panda-right-eye {
+	bottom: 70px;
+	left: 82px;
+	transform: rotate(-25deg);
+}
+
+.panda-eyeball {
+	position: relative;
+	top: 6px;
+    left: 9px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.panda-nose {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 30px 30px 18px 30px;
+    bottom: 86px;
+    left: 58px;
+    transform: rotate(30deg) skewX(-30deg) scale(1,0.866);
+}
+
+.panda-left-hand, .panda-right-hand {
+	position: relative;
+	width: 25px;
+	height: 43px;
+	background-color: black;
+	border-radius: 50%/40% 40% 60% 60%;
+	z-index: -1;
+}
+
+.panda-left-hand {
+	transform: rotate(90deg);
+	bottom: 28px;
+    right: 9px;
+	animation: wave-left 3s infinite;
+	transform-origin: top;
+}
+
+@keyframes wave-left {
+	50% {
+		transform: rotate(120deg);
+	}
+}
+
+.panda-right-hand {
+	transform: rotate(-70deg);
+    bottom: 92px;
+    right: -82px;
+}
+
+.panda-left-leg, .panda-right-leg {
+	position: relative;
+	width: 21px;
+	height: 40px;
+	background-color: black;
+	border-radius: 0px 0px 30px 30px;
+	z-index: -1;
+}
+
+.panda-left-leg {
+	bottom: 105px;
+    right: -3px;
+    transform: rotate(-10deg);
+}
+
+.panda-right-leg {
+    bottom: 146px;
+    right: -58px;
+    transform: rotate(10deg);
+}
